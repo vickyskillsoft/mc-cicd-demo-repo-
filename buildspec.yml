@@ -7,8 +7,9 @@ phases:
   build:
     commands:
       - echo "Build started"
-      - zip -r mc-cicd-demo.zip . -x "*.git*"
 
 artifacts:
   files:
-    - mc-cicd-demo.zip
+    - application.py
+    - requirements.txt
+  discard-paths: yes
